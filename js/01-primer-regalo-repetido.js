@@ -27,3 +27,36 @@ function prepareGifts(gifts) {
 
 console.log(prepareGifts([3, 1, 2, 3, 4, 2, 5]))
 console.log(prepareGifts([6, 5, 5, 5, 5]))
+console.log(prepareGifts(["hola", "hola", "como", "adios"]))
+
+// Explicación
+// Eliminar duplicados:
+
+// new Set(gifts) crea un conjunto con elementos únicos.
+
+// Array.from(...) convierte el conjunto de nuevo a un array.
+
+// Ordenar el array:
+
+// El método .sort((a, b) => a - b) asegura un orden numérico ascendente.
+
+// SORT
+const numbers = [3, 1, 4, 2];
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [1, 2, 3, 4]
+// Compara 3 y 1:
+
+// 3 - 1 = 2 (positivo) → 3 va después de 1.
+
+// Compara 1 y 4:
+
+// 1 - 4 = -3 (negativo) → 1 va antes de 4.
+
+// Compara 4 y 2:
+
+// 4 - 2 = 2 (positivo) → 4 va después de 2.
+
+// Compara 3 y 2:
+
+// 3 - 2 = 1 (positivo) → 3 va después de 2.
+
